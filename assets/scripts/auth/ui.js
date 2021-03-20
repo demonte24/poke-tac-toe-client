@@ -11,7 +11,6 @@ $('#create-account').hide()
 $('#sign-up-prompt').hide()
 $('.options-row').hide()
 
-
 const signUpSuccess = function (response) {
   $('#sign-up-success-message').text('Thank you for signing up')
   $('#sign-up').trigger('reset')
@@ -24,7 +23,6 @@ const signUpSuccess = function (response) {
   $('#sign-up-error-message').html('')
   $('#animation-chansey').hide()
   $('#animation-evee').show()
-
 }
 const signUpFailure = function (response) {
   $('#sign-up-error-message').text('Sign up failed, try again')
@@ -34,7 +32,6 @@ const signUpFailure = function (response) {
 
 const signInSuccess = function (response) {
   store.user = response.user
-
 
   $('#user-message').text('Sign in successful')
   $('#sign-up').trigger('reset')
@@ -56,6 +53,7 @@ const signInSuccess = function (response) {
   $('#sign-up-success-message').html('')
   $('#change-password').trigger('reset')
   $('#auth-section').hide()
+  $('#music').prop('volume', 0.2)
 }
 
 const signInFailure = function (response) {
@@ -137,7 +135,6 @@ const onExitSignUp = function () {
   $('#sign-up-error-message').html('')
   $('#animation-evee').show()
   $('#animation-chansey').hide()
-
 }
 
 const onStartButton = function () {
@@ -149,6 +146,7 @@ const onStartButton = function () {
   $('#intro-music').trigger('play')
   $('#animation-evee').show()
   $('.start-screen-message').hide()
+  $('#intro-music').prop('volume', 0.2)
 }
 
 const onAccountSettings = function () {
@@ -165,6 +163,7 @@ const onAccountSettings = function () {
   $('.games-display').hide()
   $('#animation-growlith').show()
   $('#auth-section').show()
+  $('#sign-out-button').hide()
 }
 
 

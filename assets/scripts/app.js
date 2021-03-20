@@ -14,7 +14,6 @@ const authUi = require('./auth/ui')
 
 const gameUi = require('./games/ui')
 
-
 $(() => {
   // Selects for signup button forms to run event
   $('#sign-up').on('submit', authEvents.onSignUp)

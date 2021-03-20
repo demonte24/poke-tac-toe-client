@@ -87,6 +87,7 @@ const onExitAccountSettings = function () {
   $('#user-message').html('')
   $('#change-password').trigger('reset')
   $('#auth-section').hide()
+  $('#sign-out-button').show()
 }
 
 module.exports = {

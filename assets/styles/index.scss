@@ -19,8 +19,8 @@ body html {
 
 #animation-evee {
   margin: auto;
-  max-width: 45%;
-  max-height: 45%;
+  max-width: 52%;
+  max-height: 52%;
 }
 
 #evee {
@@ -42,8 +42,8 @@ body html {
 
 #chansey {
   margin-bottom: 0.3rem;
-  max-width: 50%;
-  max-height: 50%;
+  max-width: 60%;
+  max-height: 60%;
 }
 
 #growlith {
@@ -55,24 +55,12 @@ body html {
 .options-row {
   display: flex;
   justify-content: space-between;
-  flex-direction: row-reverse;
   align-items: center;
   font-family: 'Press Start 2P', cursive;
   margin-bottom: 0.05rem;
-  font-size: 9px;
-  margin-left: 0.05rem;
-  margin-right: 0.05rem;
-}
-
-.options-row-2 {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-family: 'Press Start 2P', cursive;
-  margin-bottom: 0.05rem;
-  font-size: 9px;
-  margin-left: 0.05rem;
-  margin-right: 0.05rem;
+  font-size: 7px;
+  margin-left: .02rem;
+  margin-right: 0.2rem;
 }
 
 #sign-out-button {
@@ -163,7 +151,7 @@ body html {
 #change-password-header,
 #sign-in-header,
 #sign-up-header {
-  font-size: 4.5vw;
+  font-size: 5vw;
 }
 
 .poke-board {
@@ -258,18 +246,35 @@ img {
   font-family: 'Press Start 2P', cursive;
   font-size: 13px;
 }
-@media (min-width:550px) {
+@media (min-width:375px) {
   #animation-evee #evee {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 50%;
+    max-height: 50%;
+  }
+  #animation-chansey #chansey {
     display: flex;
     justify-content: center;
     align-items: center;
     max-width: 33%;
     max-height: 33%;
   }
+
+  #animation-growlith #growlith {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+    max-width: 33%;
+    max-height: 33%;
+  }
+
 }
 
 @media (min-width:550px) {
-  #sign-in-header {
+  #sign-in-header, #sign-up-header, #change-password-header {
     font-size: 2vw;
   }
 }
@@ -288,14 +293,71 @@ img {
     margin-top: 15%;
     justify-content: center;
   }
+  #animation-growlith #growlith {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    max-width: 15%;
+    max-height: 15%;
+  }
+  #animation-evee #evee {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 33%;
+    max-height: 33%;
+  }
+  #animation-chansey #chansey {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 15%;
+    max-height: 15%;
+  }
 }
 
-@media (min-width:500px) {
-  .sign-in-title {
-    font-size: 4vw;
-    margin-top: .5rem;
-    margin-bottom: 0rem;
-    align-items: center;
+  @media (min-width: 500px) {
+  #sign-in, #sign-up,  {
+    font-size: 13px;
+  }
+  #sign-up-prompt {
+    font-size: 12px;
+  }
+  #start-screen-message {
+    font-size: 1rem;
+  }
+  #start-button {
+    font-size: 1rem;
+  }
+  #create-account {
+    font-size: 12px;
+  }
+  .options-row, {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    font-size: 12px;
+  }
+  #player-message {
+    font-size: 1rem;
+  }
+}
 
+@media (min-width: 700px) {
+.sign-in-title, #game-board-title {
+  font-size: 50px;
+  margin-top: 3rem;
+  margin-bottom: 0rem;
+  align-items: center;
+}
+}
+
+@media (min-width:1100px) {
+  #animation-evee #evee {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 20%;
+    max-height: 20%;
   }
 }
